@@ -1,0 +1,29 @@
+{
+	"name": "roomie",
+	"version": "1.0.0",
+	"type": "module",
+	"bin": {
+		"roomie": "./source/discover-rooms.ts"
+	},
+	"scripts": {
+		"start": "nub source/discover-rooms.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"commander": "^12.1.0",
+		"lowdb": "^7.0.1",
+		"playwright": "^1.49.0"
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "nub",
+			"version": "^0.10.0",
+			"onFail": "ignore"
+		}
+	},
+	"devDependencies": {
+		"@nubjs/types": "^0.10.0",
+		"@types/node": "^26.6.6",
+		"typescript": "^7.0.2"
+	}
+}
